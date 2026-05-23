@@ -51,7 +51,7 @@ resource "aws_instance" "this_instance" {
 
 
   tags = {
-    name = "${local.instance_name}"
+    Name = "${local.instance_name}"
   }
 }
 
