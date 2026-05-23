@@ -2,7 +2,7 @@ locals {
   vpc_name      = "cmtr-6pajwelx-vpc"
   instance_name = "cmtr-6pajwelx-ec2"
   sg_name       = "cmtr-6pajwelx-sg"
-  subnet_name = "cmtr-6pajwelx-public_subnet"
+  subnet_name   = "cmtr-6pajwelx-public_subnet"
 
 
 }
@@ -24,8 +24,8 @@ data "aws_subnet" "public_a" {
     values = [local.subnet_name]
   }
   filter {
-  name = "cidr-block"
-  values = ["10.0.1.0/24"]
+    name   = "cidr-block"
+    values = ["10.0.1.0/24"]
   }
 }
 
